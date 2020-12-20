@@ -1,0 +1,14 @@
+(?:^|/)go\.(?:mod|sum)$
+ignore$
+\.crt$
+\.key$
+\.pb\.go$
+\.pem$
+\.png$
+\.svg$
+\.xml$
+^code-of-conduct\.md$
+^LICENSE$
+^MAINTAINERS$
+^storage/conformance/jwks\.go$
+^\.github/

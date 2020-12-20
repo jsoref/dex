@@ -1,0 +1,45 @@
+# Goo.gl
+/goo\.gl/[a-zA-Z0-9]+
+# GitHub SHAs
+(?:\[[0-9a-f]+\]\(https:/|)/github\.com/[^/]+/[^/]+/[^/]+/[0-9a-f]+\b
+# uuid:
+[{"'][0-9a-fA-F]{8}-(?:[0-9a-fA-F]{4}-){3}[0-9a-fA-F]{12}['"}]
+# Slack
+slack://[a-zA-Z0-9?&=]+
+
+"[0-9a-f]{32}"
+
+"code_(?:challenge|verifier)", "[a-zA-Z0-9-]{43}"
+
+# Keys
+^[a-zA-Z=;,/0-9+-]{64}$
+
+# Okta
+>http://www.okta.com/\w{20}<
+
+"\$[$a-zA-Z=;,/0-9+-.]*"
+Token(?:Hash|)\s*= "[^"]*"
+hash: "\w{80}"
+"access_token": "\w{36}"
+
+"at_hash": "\w{22}"
+code=\w{22}\b
+state=\w{11}\b
+access_token=\w{10}\b
+inResponseTo:\s*"\w{26}"
+InResponseTo="\w{26}"
+SessionIndex="\w{26}"
+"sub": "\w{23}"
+
+id_token=eyJ0[a-zA-Z0-9. ]{46}
+eyJhbG[$a-zA-Z=;,/0-9+-._]*$
+^Np4v\w{47}=$
+\bZXhhbX\w{18}\b
+
+# hex digits including css/html color classes:
+(?:[\\0][xX]|\\u|[uU]\+|#|\%23)[0-9a-fA-FgGrR]{2,}[uU]?[lL]{0,2}\b
+# ignore long runs of a single character:
+\b([A-Za-z])\1{3,}\b
+
+# versions
+v\d+
